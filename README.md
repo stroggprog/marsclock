@@ -1,7 +1,7 @@
 # marsclock
  A clock to tell the time on Mars for the Raspberry Pi
  
-**Note:**_I wrote the original phil-ide/marsclock but lost access to the account, so have cloned it here in case anyone needs me to be able to update the repo//
+**Note:**_I wrote the original phil-ide/marsclock but lost access to the account, so have cloned it here in case anyone needs me to be able to update the repo_
 
 Although this is intended for the Raspberry Pi, it'll run on any platform that supports Nodejs and Electron.
 
