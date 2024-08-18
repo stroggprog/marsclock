@@ -85,6 +85,7 @@ function MartianTime(){
 	meridian = ((today.getTime()+(TTUTC*1000)) - sdate.getTime())/1000;
 
 	var millis = today.getTime();
+	millis -5000; // correction for new algorithms in Mars24J
     var jd_ut = 2440587.5 + (millis / 8.64E7);
     var jd_tt = jd_ut + (TTUTC + 32.184) / 86400; // 32.184 has to be added in again to align with Mars24 - error on their part?
     var j2000 = jd_tt - 2451545.0;
