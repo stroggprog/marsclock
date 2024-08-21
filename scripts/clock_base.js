@@ -88,7 +88,7 @@ function MartianTime(){
 	millis -5000; // correction for new algorithms in Mars24J
     var jd_ut = 2440587.5 + (millis / 8.64E7);
     var jd_tt = jd_ut + (TTUTC + 32.184) / 86400; // 32.184 has to be added in again to align with Mars24 - error on their part?
-    var j2000 = jd_tt - 2451545.0;
+    var j2000 = (jd_tt - 2451545.0) + 0.00005;
     var msd = (((j2000 - 4.5) / 1.027491252) + 44796.0 - 0.00096);
     var mtc = (24 * msd) % 24;
 
